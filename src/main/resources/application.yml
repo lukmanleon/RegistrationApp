@@ -1,0 +1,22 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost;databaseName=registration_v2
+    username: user
+    password: user
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        format_sql: true
+        show_sql: true
+        ddl-auto: create-drop
+        generate-ddl: true
+        hbm2ddl:
+          auto: create
