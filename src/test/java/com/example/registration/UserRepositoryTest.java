@@ -31,4 +31,13 @@ public class UserRepositoryTest {
         User existUser = entityManager.find(User.class, savedUser.getId());
         assert(existUser.getEmail().equals(user.getEmail()));
     }
+
+    @Test
+    public void findUserByEmail(){
+
+        String email = "leon@test.com";
+        User user = userRepo.findByEmail(email);
+
+        assert (user != null);
+    }
 }
