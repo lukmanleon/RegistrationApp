@@ -48,6 +48,7 @@ public class AppController {
         List<User> listUsers = userRepository.findAll();
         model.addAttribute("listUsers", listUsers);
 
+        //Returns a table containing all users
         return "users";
     }
 }

@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "users")
 public class User {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -20,6 +21,7 @@ public class User {
 
     @Column (nullable = false, unique = true, length = 40)
     private String lastName;
+
 
     public Long getId() {
         return id;
@@ -59,5 +61,10 @@ public class User {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+
+    public User(){
+
     }
 }
