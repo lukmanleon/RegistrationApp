@@ -5,9 +5,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:sqlserver://localhost;databaseName=registration_v2
-    username: user
-    password: user
+    url: jdbc:sqlserver://LEONW10;databaseName=registration_v2
+    username: user_001
+    password: Password1!
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     show-sql: true
